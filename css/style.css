@@ -1,0 +1,208 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0; padding: 0; 
+    font-family: 'Open Sans', sans-serif;
+}
+li{list-style: none;}
+a{text-decoration: none; display: block; color: inherit;}
+img{display: block; border: 0;}
+
+#wrap>section{
+    height: 100vh;
+    position: relative;
+}
+
+#wrap>section:nth-child(3){background: #222;}
+#wrap>section:nth-child(4){background: #333;}
+#wrap>section:nth-child(5){background: #444;}
+#wrap>section:nth-child(6){background: #666;}
+
+.inTitle{padding-top: 20px; text-align: center;}
+.inTitle h2{
+    font-size: 3em;
+    padding: 20px 0;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+}
+.inTitle p{
+    text-align: center;
+    font-size: .9em;
+    color: rgb(228, 228, 228);
+}
+
+#line img{width: 80%;}
+section .box{
+    width: 300px; height: 300px;
+    background: rgba(141, 141, 141, 0.507);
+    position: absolute; top: 30%; left: -50%;
+    opacity: 0; transition: .6s;
+}
+section .text, .chart{
+    width: 300px; height: 300px;
+    background: rgba(255, 255, 255, 0.507);
+    position: absolute; top: -50%; left: 60%;
+    opacity: 0; transition: .6s;
+}
+
+section.active .box{
+    width: 300px; height: 300px;
+    background: rgba(141, 141, 141, 0.507);
+    position: absolute; top: 30%; left: 20%;
+    opacity: 1;
+}
+section.active .text, .chart{
+    width: 300px; height: 300px;
+    background: rgba(255, 255, 255, 0.507);
+    position: absolute; top: 30%; left: 60%;
+    opacity: 1;
+}
+section .title{
+    position: absolute;
+    top: 40%; left: 0%;
+}
+.sTitle{
+    position: absolute;
+    top: 60%; left: 60%;
+    font-size: 2rem;
+}
+.sTitle span{
+    color: rgba(255, 255, 255, 0.719);
+    display: inline-block;
+    transition: .6s;
+    transform: translate(50px,0);
+    opacity: 0;
+}
+section.active .sTitle span{
+    transform: translate(0,0);
+    opacity: 1;
+}
+section .title span{
+    display: inline-block;
+    transition: .6s;
+    transform: translate(50px,0);
+    opacity: 0;
+}
+section.active .title span{
+    transform: translate(0,0);
+    opacity: 1;
+}
+section .title span:nth-child(1){transition-delay: .1s;}
+section .title span:nth-child(2){transition-delay: .2s;}
+section .title span:nth-child(3){transition-delay: .3s;}
+section .title span:nth-child(4){transition-delay: .4s;}
+section .title span:nth-child(5){transition-delay: .5s;}
+
+section .sTitle span:nth-child(1){transition-delay: .1s;}
+section .sTitle span:nth-child(2){transition-delay: .2s;}
+section .sTitle span:nth-child(3){transition-delay: .3s;}
+section .sTitle span:nth-child(4){transition-delay: .4s;}
+section .sTitle span:nth-child(5){transition-delay: .5s;}
+
+/* section 2 */
+.bg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px auto;
+    position: relative;
+}
+.chart{
+    width:400px;
+    height:300px;
+    position: absolute;
+    top: 35%;
+    left: 53%;
+    background: rgba(248, 248, 255, 0.801);
+    text-align: center;
+}
+.chart .graph ul{display: flex;}
+.chart .graph li{
+    width: 300px;
+    border:1px lightblue solid;
+    height: 40px;
+    margin: 0 auto;
+}
+.chart .cTitle{
+    border: none !important;
+    height: 20px !important;
+    padding: 10px 0;
+}
+.chart .graph li div{
+    height: 40px;
+    background:lightblue;
+    transform-origin: left top;
+    transition:.6s;
+}
+
+section .chart .graph li:nth-child(2) div{
+    transform:scaleX(0);
+}
+section .chart .graph li:nth-child(4) div{
+    transform:scaleX(0);
+}
+section .chart .graph li:nth-child(6) div{
+    transform:scaleX(0);
+}
+
+section.active .chart .graph li:nth-child(2) div{
+    transform:scaleX(.85);
+    transition-delay: .6s;
+}
+section.active .chart .graph li:nth-child(4) div{
+    transform:scaleX(.9);
+    transition-delay: 1.2s;
+}
+section.active .chart .graph li:nth-child(6) div{
+    transform:scaleX(.77);
+    transition-delay: 1.8s;
+}
+.cBox{
+    padding: 20px; box-sizing: border-box;
+    width: 700px; height: 400px;
+    background: rgb(136, 165, 190)!important;
+    position: absolute; top: 35% !important; left: 30%!important;
+    opacity: 0; transition: .6s;
+}
+
+.cBox li:nth-child(1){padding-bottom: 20px;}
+.cBox h4{padding-bottom: 3px; color: #444; font-size: 1.2rem;}
+.cBox p{padding: 2px; color: #fff; font-size: .95rem;}
+
+.targetMenu{width:50px; height:300px; position:fixed; top:calc(50% - 150px); left:calc(100% - 150px); z-index: 9999999;}
+.targetMenu a{display:block; width:30px; height: 30px; line-height: 30px; text-align: center; background:rgba(255, 255, 255, 0.5); font-size: 1.2rem; border-radius: 50%;
+    cursor: pointer; transition:all .6s;
+}
+.targetMenu li{width:50px; height: 50px; line-height: 70px;}
+.targetMenu a.on{width:30px; height:30px; background: #8eb4f3; color:rgba(255, 255, 255, 0.5); font-size: 1.5rem;}
+
+.boxP1{
+    color: #fff;
+    padding: 20px 0 0 0;
+    font-size: 1rem; font-family: 'Roboto', sans-serif; font-weight: bolder;
+}
+.boxP2{
+    color: #fff;
+    padding: 10px 0;
+    font-size: .8rem;
+}
+.propic{
+    position: absolute; top: -40%; left: -85%;
+}
+
+/* section 3 */
+.img1{width: 300px; height: 300px;}
+.img1 img{width: 100%;}
+
+
+
+@media all and (max-width: 1024px){
+}
+@media all and (max-width: 768px){
+
+}
+@media all and (max-width: 640px){
+}
