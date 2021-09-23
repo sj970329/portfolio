@@ -33,9 +33,7 @@
                     <img src="img/line2.svg" alt="portfolio">
                 </object>
             </div>
-            <!-- <div class="sTitle">
-                <span>H</span><span>E</span><span>L</span><span>L</span><span>O</span>
-            </div> -->
+            <div class="scroll"><img src="img/Scroll-Down-white.gif" alt="scroll img"></div>
         </section>
         <section>
             <div class="inTitle">
@@ -74,99 +72,61 @@
         </section>
         <section>
             <div class="inTitle">
-                <h2>DESIGN</h2>
+                <h2>PROJECT</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="box">
                 <a class="img1" href="#none"><img src="img/pic1.png" alt="hibrary" style="cursor: pointer" onClick="window.open('https://www.figma.com/proto/yDRNxWSdB7B06DW6j68nxP/Hibrary?node-id=1%3A20&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A20&show-proto-sidebar=1','_blank')"></a>  
                 <p class="boxP1">APP prototype</p>
-                <p class="boxP2">figma 사용, 전자책 및 오디오북 서비스 플랫폼</p> 
+                <p class="boxP2">figma 사용, 전자책 및 오디오북 서비스 플랫폼</p>
+                <p class="boxP3">개인 계획 / 작업 프로젝트</p>  
             </div>
             <div class="text"></div>
         </section>
         <section>
             <div class="inTitle">
-                <h2>INDEX</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2>WEB</h2>
             </div>
             <div class="box"></div>
             <div class="text"></div>
         </section>
         <section>
             <div class="inTitle">
-                <h2>INDEX</h2>
+                <h2>GRAPHIC</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div class="box"></div>
-            <div class="text"></div>
+            <ul class="deBox">
+                <li>
+                    <a href=#none id="modal_btn"><img src="img/pic2.png" alt="가을맞이"></a>
+                    <div class="dTxt">
+                        <p class="dP1">가을맞이<p>
+                        <p class="dP2">쇼핑몰 배너 디자인</p>
+                    </div>
+                </li>
+                <li>
+                    <a href=#none><img src="img/pic3.png" alt="FOOD"></a>
+                    <div class="dTxt">
+                        <p class="dP1">FOOD<p>
+                        <p class="dP2">로고 디자인</p>
+                    </div>
+                </li>
+            </ul.deBox>
+            <div class="black_bg"></div>
+            <div class="modal_wrap">
+                <div class="modal_close"><a href="#">close</a></div>
+                <div class="mImg">
+                    <img src="img/가을맞이.png" alt="가을맞이 큰 이미지">
+                </div>
+            </div>
         </section>
         <section>
             <div class="inTitle">
-                <h2>INDEX</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2>CONTACT</h2>
+                <p>Thank you for your visit!</p>
             </div>
-            <div class="box"></div>
-            <div class="text"></div>
+            <div class="ctBox"></div>
         </section>
     </div>
-    <script>
-        var targetMenu = document.querySelector(".targetMenu");
-        var onTaget = document.querySelectorAll(".targetMenu ul li");
-        var section = document.querySelectorAll("section");
-        var sectionCounter = 0; 
-        var offset = 0;
-        var count=0;
-        document.addEventListener('wheel', scrollAni);
-        window.addEventListener('load', activeMenu);
-        targetMenu.addEventListener('click', gosection);       
-
-        function scrollAni(e){
-            count++;
-            var gosectioncount = count%5;
-            if(e.wheelDelta<0){
-                if(gosectioncount == 4 && sectionCounter<5)sectionCounter++;
-            }else{
-                if(gosectioncount == 4 && sectionCounter>0)sectionCounter--;
-            }
-            
-            offset = innerHeight*sectionCounter;
-
-            $("html, body").stop().animate({scrollTop:offset},600,"easeInOutExpo");
-
-            setTimeout(activeMenu,300);
-            onTargetMenu();
-        }
-
-        function activeMenu(){
-            section.forEach(function(ele){ele.classList.remove("active");});
-            section[sectionCounter].classList.add("active");
-        }
-
-        function gosection(e){
-            sectionCounter = Number(e.target.getAttribute("datanum"));
-            offset = innerHeight*sectionCounter;
-            $("html, body").stop().animate({scrollTop:offset},600,"easeInOutExpo");
-            setTimeout(activeMenu,300);
-            onTargetMenu();
-        }
-
-        function onTargetMenu(){
-            onTaget.forEach(function(menu){
-                menu.children[0].classList.remove("on");
-            });
-            onTaget[sectionCounter].children[0].classList.add("on");
-        }
-        
-        // 스크롤 막기 시작
-        $('html, body').css({'overflow': 'hidden', 'height': '100%'});
-        $('#element').on('scroll touchmove mousewheel', function(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        return false;
-        });
-        //스크롤 막기 끝
-
-        
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
