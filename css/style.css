@@ -174,7 +174,7 @@ section.active .chart .graph li:nth-child(6) div{
     padding: 20px; box-sizing: border-box;
     width: 700px; height: 400px;
     background: rgb(136, 165, 190)!important;
-    position: absolute; top: 35% !important; left: 30%!important;
+    position: absolute; top: 35% !important; left: 29.5%!important;
     opacity: 0; transition: .6s;
 }
 
