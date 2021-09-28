@@ -182,11 +182,11 @@ section.active .chart .graph li:nth-child(6) div{
 .cBox p{padding: 2px; color: #fff; font-size: .95rem;}
 
 .targetMenu{width:50px; height:300px; position:fixed; top:calc(50% - 150px); left:calc(100% - 100px); z-index: 9999999;}
-.targetMenu a{display:block; width:30px; height: 30px; line-height: 30px; text-align: center; background:rgba(255, 255, 255, 0.5); font-size: 1.2rem; border-radius: 50%;
+.targetMenu a{display:block; width:20px; height: 20px; line-height: 30px; text-align: center; background:rgba(255, 255, 255, 0.5); font-size: 1.2rem; border-radius: 50%;
     cursor: pointer; transition:all .6s;
 }
 .targetMenu li{width:50px; height: 50px; line-height: 70px;}
-.targetMenu a.on{width:30px; height:30px; background: #8eb4f3; color:rgba(255, 255, 255, 0.5); font-size: 1.5rem;}
+.targetMenu a.on{width:20px; height:20px; background: #8eb4f3; color:rgba(255, 255, 255, 0.5); font-size: 1.5rem;}
 
 .boxP1, .dP1{
     color: #fff;
