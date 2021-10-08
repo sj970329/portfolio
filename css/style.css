@@ -276,11 +276,17 @@ section.active .chart .graph li:nth-child(6) div{
 .mImg{width:91%; margin: 0 auto; box-sizing: border-box;}
 .mImg img{width: 100%;}
 
+/* section 6 */
 
-@media all and (max-width: 1024px){
+.bmk{
+    position: absolute; top: -10px; left: -10px;
+    width: 20%;
+}
+
+/* @media all and (max-width: 1024px){
 }
 @media all and (max-width: 768px){
 
 }
 @media all and (max-width: 640px){
-}
+} */
