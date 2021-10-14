@@ -1,3 +1,5 @@
+
+
 var targetMenu = document.querySelector(".targetMenu");
 var onTaget = document.querySelectorAll(".targetMenu ul li");
 var section = document.querySelectorAll("section");
@@ -7,23 +9,6 @@ var count=0;
 document.addEventListener('wheel', scrollAni);
 window.addEventListener('load', activeMenu);
 targetMenu.addEventListener('click', gosection);
-
-window.onload = function() {
-
-function onClick() {
-    document.querySelector('.modal_wrap').style.display ='block';
-    document.querySelector('.black_bg').style.display ='block';
-    }   
-    function offClick() {
-     document.querySelector('.modal_wrap').style.display ='none';
-     document.querySelector('.black_bg').style.display ='none';
-    }
-
-    document.getElementById('modal_btn').addEventListener('click', onClick);
-    document.querySelector('.modal_close').addEventListener('click', offClick);
-
-};
-
 
 function scrollAni(e){
     count++;

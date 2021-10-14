@@ -8,7 +8,9 @@
     <title>PORTFOLIO</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
     <div class="targetMenu">
@@ -80,6 +82,8 @@
                 <p class="boxP1">APP prototype</p>
                 <p class="boxP2">figma 사용, 전자책 및 오디오북 서비스 플랫폼</p>
                 <p class="boxP3">개인 계획 / 작업 프로젝트</p>  
+                <a class="hiPdf" href="https://drive.google.com/file/d/162ScNf5yhSRmFy7jtc9Ue-A7mPzTh_in/view?usp=sharing" target="_blank">
+                <img src="img/pdf 2.png" alt="hibrary pdf"></a>
             </div>
             <div class="text"></div>
         </section>
@@ -95,32 +99,58 @@
                 <h2>GRAPHIC</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <ul class="deBox">
-                <li>
-                    <a href=#none id="modal_btn"><img src="img/pic2.png" alt="가을맞이"></a>
-                    <div class="dTxt">
-                        <p class="dP1">가을맞이<p>
-                        <p class="dP2">쇼핑몰 배너 디자인</p>
-                    </div>
-                </li>
-                <li>
-                    <a href=#none><img src="img/pic3.png" alt="FOOD"></a>
-                    <div class="dTxt">
-                        <p class="dP1">FOOD<p>
-                        <p class="dP2">로고 디자인</p>
-                    </div>
-                </li>
-            </ul.deBox>
-            <div class="black_bg"></div>
-            <div class="modal_wrap">
-                <div class="modal_close"><a href="#">close</a></div>
-                <div class="mImg">
-                    <img src="img/가을맞이.png" alt="가을맞이 큰 이미지">
+            <div class="page-wrapper" style="position:relative;">
+                <div class="post-slider">
+                  <i class="fas fa-chevron-left prev"></i>  <!-- 왼쪽 방향 버튼 -->
+                  <i class="fas fa-chevron-right next"></i> <!-- 오른쪽 방향 버튼 -->
+                  <div class="post-wrapper">
+                        <div class="post">
+                          <a href="https://drive.google.com/file/d/1syDsEepop-mqA9zcgjj-zwBM53k2TirK/view?usp=sharing" target="_blank"><img src="img/pic2.png" class="slider-image"></a>
+                          <div class="post-info">
+                            <p class="dP1">가을맞이<p>
+                            <p class="dP2">쇼핑몰 배너 디자인</p>
+                          </div>
+                        </div>
+                        <div class="post">
+                          <a href="#none"><img src="img/pic3.png" class="slider-image"></a>
+                          <div class="post-info">
+                            <p class="dP1">FOOD<p>
+                            <p class="dP2">로고 디자인</p>
+                          </div>
+                        </div>
+                        <div class="post">
+                          <a href="#none"><img src="img/pic4.png" class="slider-image"></a>
+                          <div class="post-info">
+                            <p class="dP1">대나무 칫솔<p>
+                            <p class="dP2">상세페이지 이미지 디자인</p>
+                          </div>
+                        </div>
+                        <div class="post">
+                          <a href="#none"><img src="https://cdn.pixabay.com/photo/2021/09/17/08/40/lake-6632026_960_720.jpg" class="slider-image"></a>
+                          <div class="post-info">
+                            <p class="dP1">5<p>
+                            <p class="dP2">상세페이지 이미지 디자인</p>
+                          </div>
+                        </div>
+                        <div class="post">
+                            <a href="#none"><img src="https://cdn.pixabay.com/photo/2015/09/09/16/05/forest-931706_960_720.jpg" class="slider-image"></a>
+                            <div class="post-info">
+                            <p class="dP1">6<p>
+                            <p class="dP2">상세페이지 이미지 디자인</p>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <a href="#none"><img src="https://cdn.pixabay.com/photo/2015/09/09/16/05/forest-931706_960_720.jpg" class="slider-image"></a>
+                            <div class="post-info">
+                            <p class="dP1">7<p>
+                            <p class="dP2">상세페이지 이미지 디자인</p>
+                            </div>
+                        </div>
+                  </div>
                 </div>
             </div>
         </section>
         <section>
-            <img class="bmk" src="img/bmark.png" alt="book">
             <div class="inTitle">
                 <h2>CONTACT</h2>
                 <p>Thank you for your visit!</p>
@@ -130,5 +160,42 @@
         </section>
     </div>
     <script src="js/script.js"></script>
+    <script type="text/javascript">
+	
+    $('.post-wrapper').slick({
+            slide: 'div',		//슬라이드 되어야 할 태그 ex) div, li 
+            infinite : true, 	//무한 반복 옵션	 
+            slidesToShow : 3,		// 한 화면에 보여질 컨텐츠 개수
+            slidesToScroll : 4,		//스크롤 한번에 움직일 컨텐츠 개수
+            speed : 600,	 // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+            arrows : true, 		// 옆으로 이동하는 화살표 표시 여부
+            dots : false, 		// 스크롤바 아래 점으로 페이지네이션 여부
+            autoplay : false,			// 자동 스크롤 사용 여부
+            autoplaySpeed : 2000, 		// 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+            pauseOnHover : true,		// 슬라이드 이동	시 마우스 호버하면 슬라이더 멈추게 설정
+            vertical : false,		// 세로 방향 슬라이드 옵션
+            prevArrow : $('.prev'),		// 이전 화살표 모양 설정
+            nextArrow : $('.next'),		// 다음 화살표 모양 설정
+            draggable : true, 	//드래그 가능 여부 
+            
+            responsive: [ // 반응형 웹 구현 옵션
+                {  
+                    breakpoint: 1280, //화면 사이즈 1280px
+                    settings: {
+                        //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                        slidesToShow:3 
+                    } 
+                },
+                { 
+                    breakpoint: 768, //화면 사이즈 768px
+                    settings: {	
+                        //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                        slidesToShow:2 
+                    } 
+                }
+            ]
+        });
+    
+    </script>
 </body>
 </html>
