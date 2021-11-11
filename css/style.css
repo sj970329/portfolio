@@ -47,7 +47,6 @@ img{display: block; border: 0;}
 #line img{width: 80%;}
 section .box{
     width: 300px; height: 300px;
-    background: rgba(141, 141, 141, 0.507);
     position: absolute; top: 30%; left: -50%;
     opacity: 0; transition: .6s;
 }
@@ -60,7 +59,6 @@ section .text, .chart{
 
 section.active .box{
     width: 300px; height: 300px;
-    background: rgba(141, 141, 141, 0.507);
     position: absolute; top: 30%; left: 20%;
     opacity: 1;
 }
@@ -224,7 +222,7 @@ section.active .chart .graph li:nth-child(6) div{
     opacity: 1; transition: .3s;
 }
 
-/* section 4 */
+/* section 3 */
 .deBox{width: 100%; padding: 40px 40px 20px 80px; box-sizing: border-box; display: flex;}
 .deBox li{width: 300px; height: 400px; display: block; padding-right: 30px;}
 .deBox li a{width: 300px; height: 300px; background: #fff; flex-wrap: wrap;}
@@ -237,9 +235,15 @@ section.active .chart .graph li:nth-child(6) div{
 .hiPdf{width: 50px; height: 50px; padding-top: 10px;}
 .hiPdf img{width: 100%; opacity: .5; transition: .3s;}
 .hiPdf img:hover{opacity: 1;}
-/* section 5 */
+/* section 4 */
+.webBox a{
+    width: 1000px; height: 600px; overflow: hidden;
+}
+.webBox a img{width: 100%;}
+.webtxt{background: none!important;}
+.webtxt h3{color: rgb(132, 52, 77); letter-spacing: -1px;}
 
-/* section 6 */
+/* section 5 */
 
 
 
