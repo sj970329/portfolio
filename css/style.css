@@ -239,12 +239,18 @@ section.active .chart .graph li:nth-child(6) div{
 .hiPdf img{width: 100%; opacity: .5; transition: .3s;}
 .hiPdf img:hover{opacity: 1;}
 /* section 4 */
-.webBox a{
+.webBox{
     width: 1000px; height: 600px; overflow: hidden;
 }
 .webBox a img{width: 100%;}
 .webtxt{background: none!important;}
-.webtxt h3{color: rgb(132, 52, 77); letter-spacing: -1px;}
+.webtxt h3{color: rgb(132, 52, 77); letter-spacing: -1px; text-align: center;}
+.webtxt p{
+    width: 50px; height: 25px;
+    background-color: rgb(132, 52, 77); color: #fff; font-size: .8rem;
+    line-height: 25px; border-radius: 20px; text-align: center;
+    margin-top: 10px;
+}
 
 /* section 5 */
 
