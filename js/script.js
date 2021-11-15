@@ -56,3 +56,25 @@ return false;
 });
 //스크롤 막기 끝
 
+$('.aaa').click(
+    function(){
+        var src = $(this).children('img').attr('src');
+        $('#popup').fadeIn();
+        $('#popup').children('img').attr('src', src);
+    }
+);
+
+$('#popup').children('img').click(
+    function(){
+        $('#popup').fadeOut();
+    }
+);
+
+$('.bbb').click(
+    function(){
+        var src = 'img/애견 이벤트.png';
+        console.log(src);
+        $('#popup').fadeIn();
+        $('#popup').children('img').attr('src', src);
+    }
+);
