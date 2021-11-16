@@ -72,7 +72,7 @@ $('#popup').children('img').click(
 
 $('.bbb').click(
     function(){
-        var src = 'img/애견 이벤트.png';
+        var src = 'img/반려견 이벤트.png';
         console.log(src);
         $('#popup').fadeIn();
         $('#popup').children('img').attr('src', src);
