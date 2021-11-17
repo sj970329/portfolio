@@ -239,14 +239,15 @@ section.active .chart .graph li:nth-child(6) div{
 .hiPdf img{width: 100%; opacity: .5; transition: .3s;}
 .hiPdf img:hover{opacity: 1;}
 /* section 4 */
-.webBox{
+.webBox, .webBox2{
     width: 1000px; height: 600px; overflow: hidden;
 }
-.webBox a{cursor: default;}
+.webBox a, .webBox a{cursor: default;}
 .webBox a img{width: 100%;}
+.webBox2 a img{width: 100%;}
 
-.webtxt{background: none!important;}
-.webtxt{
+.webtxt, .webtxt2{background: none!important;}
+.webtxt, .webtxt2{
     width: 350px; height: 500px;
     background: rgba(255, 255, 255, 0.507);
     position: absolute; top: -50%; left: 60%;
@@ -259,7 +260,7 @@ section.active .webtxt{
     position: absolute; top: 25%; left: 60%;
     opacity: 1;
 }
-.webtxt h3{color: rgb(132, 52, 77); letter-spacing: -1px; text-align: center;}
+.webtxt h3:nth-child(1){color: rgb(132, 52, 77); letter-spacing: -1px; text-align: center;}
 .plist{
     width: 100%; display: flex; margin: 0 auto;
     justify-content: space-around;
@@ -288,12 +289,48 @@ section.active .webtxt{
     color: #fff; font-size: .85rem; line-height: 30px;
     border: rgb(199, 107, 107) 1px solid; text-align: center;
 }
+section.active .webtxt2{
+    width: 350px; height: 500px;
+    background: rgba(255, 255, 255, 0.507);
+    position: absolute; top: 25%; left: 60%;
+    opacity: 1;
+}
 
 /* section 5 */
 
+.plist2{
+    width: 100%; display: flex; margin: 0 auto;
+    justify-content: space-around;
+}
+.plist2 p{
+    width: 60px; height: 25px;
+    background-color: rgb(26, 26, 26); color: rgb(236, 137, 90); font-size: .8rem;
+    line-height: 25px; border-radius: 20px; text-align: center;
+    margin-top: 10px;
+}
+.btnlist2{
+    width: 100%; 
+    position: absolute;
+    top: 45%; left: 55%;
+}
+.btnlist2 a{width: 130px; height: 50px;}
+.btnlist2 a p{
+    width: 100%;  height: 30px;
+    color: rgb(219, 94, 36); font-size: .85rem; line-height: 30px;
+    border: rgb(219, 94, 36) 1px solid; text-align: center; border-radius: 20px;
+    margin-top: 20px;
+    transition: .3s;
+}
+.btnlist2 a p:hover{
+    background: rgb(219, 94, 36);
+    color: #fff; font-size: .85rem; line-height: 30px;
+    border: rgb(219, 94, 36) 1px solid; text-align: center;
+}
+.webtxt2 h3{color: rgb(46, 46, 46); letter-spacing: -1px; text-align: center;}
 
 
 /* slider */
+.post-info p{color: rgb(233, 233, 233);}
 .post a img{opacity: .7; transition: .3s;}
 .post a img:hover{opacity: 1; transition: .3s;}
 
