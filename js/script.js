@@ -10,6 +10,38 @@ document.addEventListener('wheel', scrollAni);
 window.addEventListener('load', activeMenu);
 targetMenu.addEventListener('click', gosection);
 
+$('.post-wrapper').slick({
+    slide: 'div',
+    infinite : true,
+    slidesToShow : 3,
+    slidesToScroll : 4,
+    speed : 600,
+    arrows : true,
+    dots : false,
+    autoplay : false,
+    autoplaySpeed : 2000,
+    pauseOnHover : true,
+    vertical : false,
+    prevArrow : $('.prev'),
+    nextArrow : $('.next'),
+    draggable : true,
+    
+    responsive: [
+        {  
+            breakpoint: 1280,
+            settings: {
+                slidesToShow:3 
+            } 
+        },
+        { 
+            breakpoint: 768,
+            settings: {	
+                slidesToShow:2 
+            } 
+        }
+    ]
+});
+
 function scrollAni(e){
     count++;
     var gosectioncount = count%5;

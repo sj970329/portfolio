@@ -31,6 +31,7 @@ img{display: block; border: 0;}
 #wrap>section:nth-child(5){background: linear-gradient(#9ac2e6, #9ba5d4);}
 #wrap>section:nth-child(6){background: linear-gradient(#9ba5d4, #867099);}
 
+.bg1{background: #eeb1bd;}
 .inTitle{padding-top: 20px; text-align: center;}
 .inTitle h2{
     font-size: 3em;
@@ -42,7 +43,7 @@ img{display: block; border: 0;}
     font-family: 'Pretendard-Regular';
     text-align: center;
     font-size: .9em;
-    color: rgb(245, 245, 245);
+    color: #fff;
 }
 
 .scroll{width: 100px; height: 100px; position: absolute; top: 49%; left: 45%;}
